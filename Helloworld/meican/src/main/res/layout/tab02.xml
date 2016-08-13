@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/tab02_RollPagerView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:rollviewpager_play_delay="3000"
+        app:rollviewpager_hint_color="#FFFFFF"
+        app:rollviewpager_hint_gravity="center"
+        app:rollviewpager_hint_alpha="100"
+        />
+        <Button
+            android:id="@+id/tab02_bt_recycleview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启动RecycleView"/>
+    <Button
+        android:id="@+id/tab02_bt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动WelcomeActivity"/>
+    <Button
+        android:id="@+id/tab02_bt_swipeRefreshAndLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动swipeRefreshAndLoadActivity"/>
+    <TextView
+        android:id="@+id/tab02_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:text="This is"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tab02_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+    </ScrollView>
